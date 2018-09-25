@@ -1,0 +1,11 @@
+<h1>Latest News</h1>
+
+<div *ngFor="let news of fNewsData |limit:3">
+ <h3>{{news.title}}</h3>
+ <p>
+ <img [src]=news.urlToImage width=500 height=160><br/>
+ {{news.description}}......<br/>
+ <a hrer="">Read More</a>
+ </p>
+ <hr/>
+</div>
